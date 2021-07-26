@@ -8,44 +8,65 @@ export interface IMenuItem {
 }
 
 const data: IMenuItem[] = [
+  
   {
-    id: 'vien',
-    icon: 'iconsminds-air-balloon-1',
-    label: 'menu.vien',
-    to: '/app/vien',
+    id: 'vendor',
+    label: 'Vendor Profile',
+    to: '/app/vendor',
     subs: [
       {
-        icon: 'simple-icon-paper-plane',
-        label: 'menu.start',
-        to: '/app/vien/start'
+        label: 'Vendor List',
+        to: '/app/vendor',
+        subs:[
+          {
+            label:"Partener List",
+            to:"/app/vendor"
+          },
+          {
+            label:"Consumer List",
+            to:"/app/consumer"
+          }
+        ]
+      },
+      {
+        label:"Vendor Report",
+      to:"/app/vendor" 
       }
     ]
   },
   {
-    id: 'second-menu',
-    icon: 'iconsminds-three-arrow-fork',
-    label: 'menu.second-menu',
-    to: '/app/second-menu',
+    id: 'machine',
+    label: 'Vending Machine',
+    to: '/app/vendor',
     subs: [
       {
-        icon: 'simple-icon-paper-plane',
-        label: 'menu.second',
-        to: '/app/second-menu/second'
+        label: 'Vending Machine List',
+        to: '/app/vendor'
+      },
+      {
+        label:"Vending Machine Report",
+      to:"/app/vendor" 
       }
     ]
   },
   {
-    id: 'blankpage',
-    icon: 'iconsminds-bucket',
-    label: 'menu.blank-page',
-    to: '/app/blank-page'
-  },
-  {
-    id: 'docs',
-    icon: 'iconsminds-library',
-    label: 'menu.docs',
-    to: 'https://vien-docs.coloredstrategies.com/',
-    newWindow: true
+    id: 'Vending',
+    label: 'Vending Profile',
+    to: '/app/vendor',
+    subs: [
+      {
+        label: 'Vending Request',
+        to: '/app/vendor'
+      },
+      {
+        label:"POs List",
+      to:"/app/pos" 
+      },
+      {
+        label:"SMS List",
+      to:"/app/vendor" 
+      }
+    ]
   }
 ];
 export default data;

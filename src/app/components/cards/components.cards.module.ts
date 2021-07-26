@@ -8,6 +8,8 @@ import { PostCardComponent } from './post-card/post-card.component';
 import { PriceCardComponent } from './price-card/price-card.component';
 import { RadialProcessCardComponent } from './radial-process-card/radial-process-card.component';
 import { SharedModule } from 'src/app/shared/shared.module';
+import { VendorCardComponent } from './vendor-card/vendor-card.component';
+import { ConsumerCardComponent } from './consumer-card/consumer-card.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +17,9 @@ import { SharedModule } from 'src/app/shared/shared.module';
     GradientWithRadialProgressCardComponent,
     PostCardComponent,
     PriceCardComponent,
-    RadialProcessCardComponent
+    RadialProcessCardComponent,
+    VendorCardComponent,
+    ConsumerCardComponent
   ],
   imports: [
     CommonModule,
@@ -28,7 +32,9 @@ import { SharedModule } from 'src/app/shared/shared.module';
     GradientWithRadialProgressCardComponent,
     PostCardComponent,
     PriceCardComponent,
-    RadialProcessCardComponent
+    RadialProcessCardComponent,
+    VendorCardComponent,
+    ConsumerCardComponent
   ]
 })
 

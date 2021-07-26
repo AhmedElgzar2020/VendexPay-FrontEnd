@@ -31,6 +31,7 @@ import { ProductDetailOrdersComponent } from './product-detail-orders/product-de
 import { ProductDetailCommentsComponent } from './product-detail-comments/product-detail-comments.component';
 import { ProductDetailInfoComponent } from './product-detail-info/product-detail-info.component';
 import { ProductDetailTabsComponent } from './product-detail-tabs/product-detail-tabs.component';
+import { DataTableModule } from 'src/app/components/dataTable/dataTable.module';
 
 @NgModule({
   declarations: [
@@ -67,6 +68,7 @@ import { ProductDetailTabsComponent } from './product-detail-tabs/product-detail
     LightboxModule,
     ComponentsPagesModule,
     ComponentsCardsModule,
+    DataTableModule,
     ComponentsPlayerModule,
     RatingModule.forRoot(),
     TabsModule.forRoot(),

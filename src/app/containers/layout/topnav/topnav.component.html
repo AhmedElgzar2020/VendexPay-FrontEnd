@@ -21,23 +21,23 @@
       </svg>
     </a>
 
-    <div class="search" (click)="searchAreaClick($event)">
+    <!-- <div class="search" (click)="searchAreaClick($event)">
       <input placeholder="Search..." [(ngModel)]="searchKey" (keyup)="searchKeyUp($event)">
       <span class="search-icon" (click)="searchClick($event)">
         <i class="simple-icon-magnifier"></i>
       </span>
-    </div>
+    </div> -->
 
-    <div class="btn-group ml-2" dropdown *ngIf="!isSingleLang">
+    <!-- <div class="btn-group ml-2" dropdown *ngIf="!isSingleLang">
       <button dropdownToggle type="button" class="language-button dropdown-toggle btn btn-light btn-sm">
         {{currentLanguage | uppercase}} <span class="caret"></span>
       </button>
       <ul *dropdownMenu class="dropdown-menu" role="menu">
         <li role="menuitem" *ngFor="let item of languages" (click)="onLanguageChange(item)"><a class="dropdown-item" href="javascript:;">{{item.label}}</a></li>
       </ul>
-    </div>
+    </div> -->
 
-    <a class="btn btn-sm btn-outline-primary ml-2 d-none d-xl-inline-block" href="javascript:;">&nbsp;BUY&nbsp;</a>
+    <!-- <a class="btn btn-sm btn-outline-primary ml-2 d-none d-xl-inline-block" href="javascript:;">&nbsp;BUY&nbsp;</a> -->
   </div>
 
 
@@ -98,10 +98,10 @@
       <div class="position-relative d-inline-block">
 
         <div dropdown>
-          <button id="button-basic" dropdownToggle type="button" id="notificationButton" class="header-icon btn btn-empty">
+         <!--  <button id="button-basic" dropdownToggle type="button" id="notificationButton" class="header-icon btn btn-empty">
             <i class="simple-icon-bell"></i>
             <span class="count">3</span>
-          </button>
+          </button> -->
           <div id="dropdown-basic" *dropdownMenu class="dropdown-menu dropdown-menu-right mt-3" id="notificationDropdown">
             <perfect-scrollbar>
               <div class="d-flex flex-row mb-3 pb-3 border-bottom">
