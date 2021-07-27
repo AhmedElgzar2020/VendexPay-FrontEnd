@@ -9,8 +9,7 @@ const routes: Routes = [
     {
         path: '', component: AppComponent,
         children: [
-            { path: '', pathMatch: 'full', redirectTo: 'vendor' },
-            { path: 'vendor', component: VendorComponent },
+            { path: 'vendor', loadChildren: () => import('./vendor/vendor.module').then(m => m.VendorModule) },
             { path: 'consumer', component: ConsumerComponent },
             { path: 'pos', component: POsComponent },
         ]
