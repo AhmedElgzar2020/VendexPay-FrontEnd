@@ -10,7 +10,7 @@ const routes: Routes = [
         path: '', component: AppComponent,
         children: [
             { path: 'vendor', loadChildren: () => import('./vendor/vendor.module').then(m => m.VendorModule) },
-            { path: 'consumer', component: ConsumerComponent },
+            { path: 'consumer', loadChildren: () => import('./consumer/consumer.module').then(m => m.ConsumerModule) },
             { path: 'pos', component: POsComponent },
         ]
     }

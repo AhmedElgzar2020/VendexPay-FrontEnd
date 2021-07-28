@@ -9,10 +9,11 @@ import { ConsumerComponent } from './consumer/consumer.component';
 import { DataTableModule } from 'src/app/components/dataTable/dataTable.module';
 import { POsComponent } from './POs/Pos.component';
 import { VendorModule } from './vendor/vendor.module';
+import { ConsumerModule } from './consumer/consumer.module';
 
 
 @NgModule({
-  declarations: [ AppComponent,ConsumerComponent,POsComponent],
+  declarations: [ AppComponent,POsComponent],
   imports: [
     CommonModule,
     AppRoutingModule,
@@ -20,7 +21,8 @@ import { VendorModule } from './vendor/vendor.module';
     LayoutContainersModule,
     ComponentsCardsModule,
     DataTableModule,
-    VendorModule
+    VendorModule,
+    ConsumerModule
   ]
 })
 export class AppModule { }
