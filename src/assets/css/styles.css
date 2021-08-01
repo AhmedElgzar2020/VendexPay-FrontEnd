@@ -1,0 +1,17 @@
+.col-md-12.inner-form-title {
+  font-size: 16px;
+  font-weight: 700;
+  margin-top: 20px;
+}
+.form-submitter {
+  text-align: right;
+}
+.form-submitter button{
+  min-width: 200px;
+}
+
+.gorm-group-title {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}

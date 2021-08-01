@@ -8,13 +8,14 @@ export interface IMenuItem {
 }
 
 const data: IMenuItem[] = [
-  
+
   {
     id: 'vendor',
     label: 'Vendor Profile',
     to: '/app/vendor',
     subs: [
       {
+        icon: 'simple-icon-envelope',
         label: 'Vendor List',
         to: '/app/vendor',
         subs:[
@@ -30,7 +31,7 @@ const data: IMenuItem[] = [
       },
       {
         label:"Vendor Report",
-      to:"/app/vendor" 
+      to:"/app/vendor"
       }
     ]
   },
@@ -45,7 +46,7 @@ const data: IMenuItem[] = [
       },
       {
         label:"Vending Machine Report",
-      to:"/app/vendor" 
+      to:"/app/vendor"
       }
     ]
   },
@@ -60,11 +61,11 @@ const data: IMenuItem[] = [
       },
       {
         label:"POs List",
-      to:"/app/pos" 
+      to:"/app/pos"
       },
       {
         label:"SMS List",
-      to:"/app/vendor" 
+      to:"/app/vendor"
       }
     ]
   }
