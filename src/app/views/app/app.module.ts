@@ -5,15 +5,15 @@ import { AppRoutingModule } from './app.routing';
 import { SharedModule } from 'src/app/shared/shared.module';
 import { LayoutContainersModule } from 'src/app/containers/layout/layout.containers.module';
 import { ComponentsCardsModule } from 'src/app/components/cards/components.cards.module';
-import { ConsumerComponent } from './consumer/consumer.component';
 import { DataTableModule } from 'src/app/components/dataTable/dataTable.module';
-import { POsComponent } from './POs/Pos.component';
 import { VendorModule } from './vendor/vendor.module';
 import { ConsumerModule } from './consumer/consumer.module';
+import { POsModule } from './POs/Pos.module';
+import { PartenerModule } from './partener/partener.module';
 
 
 @NgModule({
-  declarations: [ AppComponent,POsComponent],
+  declarations: [ AppComponent],
   imports: [
     CommonModule,
     AppRoutingModule,
@@ -22,7 +22,9 @@ import { ConsumerModule } from './consumer/consumer.module';
     ComponentsCardsModule,
     DataTableModule,
     VendorModule,
-    ConsumerModule
+    ConsumerModule,
+    POsModule,
+    PartenerModule
   ]
 })
 export class AppModule { }
