@@ -12,6 +12,8 @@ const routes: Routes = [
             { path: 'partener', loadChildren: () => import('./partener/partener.module').then(m => m.PartenerModule) },
             { path: 'consumer', loadChildren: () => import('./consumer/consumer.module').then(m => m.ConsumerModule) },
             { path: 'pos', loadChildren: () => import('./POs/Pos.module').then(m => m.POsModule) },
+            { path: 'machine', loadChildren: () => import('./machine/machine.module').then(m => m.MachineModule) },
+            { path: 'mobilePayment', loadChildren: () => import('./mobilePayment/mobilePayment.module').then(m => m.MobilePaymentModule) },
         ]
     }
 ];

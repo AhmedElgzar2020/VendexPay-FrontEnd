@@ -10,6 +10,8 @@ import { VendorModule } from './vendor/vendor.module';
 import { ConsumerModule } from './consumer/consumer.module';
 import { POsModule } from './POs/Pos.module';
 import { PartenerModule } from './partener/partener.module';
+import { MachineModule } from './machine/machine.module';
+import { MobilePaymentModule } from './mobilePayment/mobilePayment.module';
 
 
 @NgModule({
@@ -24,7 +26,9 @@ import { PartenerModule } from './partener/partener.module';
     VendorModule,
     ConsumerModule,
     POsModule,
-    PartenerModule
+    PartenerModule,
+    MachineModule,
+    MobilePaymentModule
   ]
 })
 export class AppModule { }
