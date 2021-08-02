@@ -6,6 +6,355 @@
     </div>
 </div>
 <div class="row">
-    add vendor
-    <!-- form here -->
+
+  <div class="col-12 col-lg-12 mb-4">
+    <h5 class="mb-4">add vendor</h5>
+    <form novalidate="">
+      <div class="card mb-4">
+        <div class="card-body mb-2">
+          <h5 class="form-group-title">Merchant General Information</h5>
+          <div class="row">
+            <div class="form-group col-md-3">
+              <label>User Name</label>
+              <input type="text" class="form-control"/>
+            </div>
+            <div class="form-group col-md-3">
+              <label>Merchant Name</label>
+              <input type="text" class="form-control"/>
+            </div>
+            <div class="form-group col-md-3">
+              <label>Company Type</label>
+              <select  class="form-control">
+                <option value="1">Type 1</option>
+                <option value="2">Type 2</option>
+                <option value="3">Type 3</option>
+              </select>
+            </div>
+            <div class="form-group col-md-3">
+              <label>Merchant Id No.</label>
+              <input type="text" class="form-control"/>
+            </div>
+            <div class="form-group col-md-3">
+              <label>Legal Company Name</label>
+              <input type="text" class="form-control"/>
+            </div>
+            <div class="form-group col-md-3">
+              <label>Address Line 1</label>
+              <input type="text" class="form-control"/>
+            </div>
+            <div class="form-group col-md-3">
+              <label>Address Line 2</label>
+              <input type="text" class="form-control"/>
+            </div>
+            <div class="form-group col-md-3">
+              <label>Zip Code</label>
+              <input type="text" class="form-control"/>
+            </div>
+            <div class="form-group col-md-3">
+              <label>City</label>
+              <input type="text" class="form-control"/>
+            </div>
+            <div class="form-group col-md-3">
+              <label>Country</label>
+              <input type="text" class="form-control"/>
+            </div>
+            <div class="form-group col-md-3">
+              <label>Logo</label>
+              <input type="file" class="form-control"/>
+            </div>
+        </div>
+
+        </div>
+
+      </div>
+
+
+
+
+      <div class="card mb-4">
+        <div class="card-body mb-2">
+          <h5 class="form-group-title">Merchant Main Office Address</h5>
+            <div class="row">
+              <div class="form-group col-md-3">
+                <label>Zip No.</label>
+                <input type="text" class="form-control"/>
+              </div>
+              <div class="form-group col-md-3">
+                <label>Street No.</label>
+                <input type="text" class="form-control"/>
+              </div>
+              <div class="form-group col-md-3">
+                <label>Building No.</label>
+                <input type="text" class="form-control"/>
+              </div>
+              <div class="form-group col-md-3">
+                <label>Building Type.</label>
+                <input type="text" class="form-control"/>
+              </div>
+              <div class="form-group col-md-3">
+                <label>Office Tel</label>
+                <input type="text" class="form-control"/>
+              </div>
+              <div class="form-group col-md-3">
+                <label>Office Fax</label>
+                <input type="text" class="form-control"/>
+              </div>
+              <div class="form-group col-md-3">
+                <label>Company Email</label>
+                <input type="text" class="form-control"/>
+              </div>
+              <div class="form-group col-md-3">
+                <label>Website</label>
+                <input type="text" class="form-control"/>
+              </div>
+            </div>
+        </div>
+      </div>
+
+
+      <div class="card mb-4">
+        <div class="card-body mb-2">
+          <h5 class="form-group-title">Merchant contacts</h5>
+            <div class="row">
+              <div class="form-group col-md-3">
+                <label>Name</label>
+                <input type="text" class="form-control" id="contact-name"/>
+              </div>
+              <div class="form-group col-md-2">
+                <label>Title</label>
+                <input type="text" class="form-control" id="contact-title"/>
+              </div>
+              <div class="form-group col-md-3">
+                <label>Email</label>
+                <input type="text" class="form-control" id="contact-email"/>
+              </div>
+              <div class="form-group col-md-3">
+                <label>Mobile</label>
+                <input type="text" class="form-control" id="contact-mobile"/>
+              </div>
+              <div class="form-group col-md-1">
+                <label>Add</label>
+                <button type="button" class="btn btn-primary site-btn" id="add-contact"> + </button>
+              </div>
+              <div class="col-md-12">
+                <ul id="contact-list"></ul>
+              </div>
+            </div>
+        </div>
+      </div>
+
+      <div class="card mb-4">
+        <div class="card-body mb-2">
+          <h5 class="form-group-title">CR Signatory Managers</h5>
+            <div class="row">
+              <div class="form-group col-md-3">
+                <label>Name</label>
+                <input type="text" class="form-control"/>
+              </div>
+              <div class="form-group col-md-2">
+                <label>Title</label>
+                <input type="text" class="form-control"/>
+              </div>
+              <div class="form-group col-md-3">
+                <label>Mobile</label>
+                <input type="text" class="form-control"/>
+              </div>
+              <div class="form-group col-md-3">
+                <label>Qid</label>
+                <input type="text" class="form-control"/>
+              </div>
+              <div class="form-group col-md-1">
+                <label>Add</label>
+                <button type="button" class="btn btn-primary site-btn"> + </button>
+              </div>
+              <div class="col-md-12">
+                <ul></ul>
+              </div>
+            </div>
+        </div>
+      </div>
+
+      <div class="card mb-4">
+        <div class="card-body mb-2">
+          <h5 class="form-group-title">Government Registeration Documents</h5>
+            <div class="row">
+              <div class="col-md-12 inner-form-title">MOCI CR</div>
+              <div class="form-group col-md-3">
+                <label>CR No.</label>
+                <input type="text" class="form-control"/>
+              </div>
+              <div class="form-group col-md-3">
+                <label>CR Expiry Date</label>
+                <input type="text" class="form-control"/>
+              </div>
+              <div class="form-group col-md-3">
+                <label>CR Print Date</label>
+                <input type="text" class="form-control"/>
+              </div>
+              <div class="form-group col-md-3">
+                <label>TAX ID NO.</label>
+                <input type="text" class="form-control"/>
+              </div>
+              <div class="form-group col-md-3">
+                <label>Image</label>
+                <input type="file" class="form-control"/>
+              </div>
+              <div class="form-group col-md-3">
+                <label>CR Start Date</label>
+                <input type="text" class="form-control"/>
+              </div>
+              <div class="form-group col-md-3">
+                <label>CR Capital QAR</label>
+                <input type="text" class="form-control"/>
+              </div>
+              <div class="form-group col-md-3">
+                <label>Legal Firm</label>
+                <input type="text" class="form-control"/>
+              </div>
+              <div class="form-group col-md-3">
+                <label>Website</label>
+                <input type="text" class="form-control"/>
+              </div>
+              <div class="col-md-12 inner-form-title">Baladiya</div>
+              <div class="form-group col-md-3">
+                <label>Trading No.</label>
+                <input type="text" class="form-control"/>
+              </div>
+              <div class="form-group col-md-3">
+                <label>Trading Expiry Date</label>
+                <input type="text" class="form-control"/>
+              </div>
+              <div class="form-group col-md-3">
+                <label>Trading Print Date</label>
+                <input type="text" class="form-control"/>
+              </div>
+              <div class="form-group col-md-3">
+                <label>Trading Type</label>
+                <select  class="form-control">
+                  <option value="1">Type 1</option>
+                  <option value="2">Type 2</option>
+                  <option value="3">Type 3</option>
+                </select>
+              </div>
+              <div class="form-group col-md-3">
+                <label>Image</label>
+                <input type="file" class="form-control"/>
+              </div>
+              <div class="col-md-12 inner-form-title">Computer Card</div>
+              <div class="form-group col-md-3">
+                <label>Computer Card No.</label>
+                <input type="text" class="form-control"/>
+              </div>
+              <div class="form-group col-md-3">
+                <label>Computer Expiry Date</label>
+                <input type="text" class="form-control"/>
+              </div>
+              <div class="form-group col-md-3">
+                <label>Sector</label>
+                <select  class="form-control">
+                  <option value="1">Sector 1</option>
+                  <option value="2">Sector 2</option>
+                  <option value="3">Sector 3</option>
+                </select>
+              </div>
+              <div class="form-group col-md-3">
+                <label>Image</label>
+                <input type="file" class="form-control"/>
+              </div>
+              <div class="col-md-12 inner-form-title">Computer Card Authorizers</div>
+              <div class="form-group col-md-3">
+                <label>Name</label>
+                <input type="text" class="form-control"/>
+              </div>
+              <div class="form-group col-md-3">
+                <label>Title</label>
+                <select  class="form-control">
+                  <option value="1">Title 1</option>
+                  <option value="2">Title 2</option>
+                  <option value="3">Title 3</option>
+                </select>
+              </div>
+              <div class="form-group col-md-3">
+                <label>Mobile</label>
+                <input type="text" class="form-control"/>
+              </div>
+              <div class="form-group col-md-3">
+                <label>QID</label>
+                <input type="text" class="form-control"/>
+              </div>
+            </div>
+
+        </div>
+      </div>
+
+      <div class="card mb-4">
+        <div class="card-body mb-2">
+          <h5 class="form-group-title">Contract Information</h5>
+            <div class="row">
+              <div class="form-group col-md-2">
+                <label>Client No.</label>
+                <input type="text" class="form-control"/>
+              </div>
+              <div class="form-group col-md-2">
+                <label>Contract No.</label>
+                <input type="text" class="form-control"/>
+              </div>
+              <div class="form-group col-md-3">
+                <label>Contract Start Date</label>
+                <input type="text" class="form-control"/>
+              </div>
+              <div class="form-group col-md-3">
+                <label>Contract Expirey Date</label>
+                <input type="text" class="form-control"/>
+              </div>
+              <div class="form-group col-md-2">
+                <label>Image</label>
+                <input type="file" class="form-control"/>
+              </div>
+              <div class="form-group col-md-3">
+                <label>Renewal Contract Date</label>
+                <input type="text" class="form-control"/>
+              </div>
+              <div class="form-group col-md-3">
+                <label>Renewal Expirey Date</label>
+                <input type="text" class="form-control"/>
+              </div>
+              <div class="form-group col-md-3">
+                <label>Company Email</label>
+                <input type="text" class="form-control"/>
+              </div>
+              <div class="form-group col-md-3">
+                <label>Website</label>
+                <input type="text" class="form-control"/>
+              </div>
+            </div>
+        </div>
+      </div>
+      <div class="form-group col-md-12 form-submitter">
+        <button type="submit" class="btn btn-primary site-btn"> Submit </button>
+      </div>
+    </form>
+  </div>
 </div>
+
+<!-- <script>
+  let contactList = [];
+  const addNew = () =>{
+    let contactName = document.getElementById("contact-name").value;
+    let contactTitle = document.getElementById("contact-title").value;
+    let contactEmail = document.getElementById("contact-email").value;
+    let contactMobile = document.getElementById("contact-mobile").value;
+    if(contactName.length !== 0 && contactTitle.length !== 0 && contactEmail.length !== 0 && contactMobile.length !== 0 ){
+      contactList.push({
+        contactName,
+        contactTitle,
+        contactEmail,
+        contactMobile,
+      })
+      contactList.map((item) => {
+        document.getElementById("contact-list").append(`<li>${item.contactName}</li>`)
+      })
+
+    }
+  }
+</script> -->
