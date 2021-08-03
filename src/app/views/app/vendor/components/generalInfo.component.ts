@@ -1,5 +1,5 @@
 import { Component, EventEmitter, Input, OnInit, Output } from "@angular/core";
-import { LookUpModel } from "src/app/models/lookUp.model";
+import { CityModel, LookUpModel } from "src/app/models/lookUp.model";
 import { Marchant } from "src/app/models/vendor.model";
 import { APIService } from "src/app/shared/api.service";
 
@@ -26,29 +26,37 @@ export class GeneralInfoComponent implements OnInit {
     zipCode: "",
   };
   countries: LookUpModel[] = [];
+  companyTypes: LookUpModel[] = [];
+  cities: LookUpModel[] = [];
   constructor(private Service: APIService) {
 
-    this.getCountries();
 
   }
   ngOnInit() {
+    this.getCountries();
+    this.getCompanyTypes();
+
   }
   Action(event: any) {
-    let data = { event: event, model: this.model };
+    let data = { event: event, model: this.model,form:1 };
     this.GetAction.emit(data);
-    /* switch (event) {
-      case "Next":
-        break;
-      case "Skip":
-        break;
-      case "Back":
-        break;
-    } */
   }
   getCountries() {
     this.Service.get("/Country").subscribe((res: any) => {
-      debugger;
       this.countries = res;
+    });
+  }
+
+  getCompanyTypes() {
+    this.Service.get("/CompanyType").subscribe((res: any) => {
+      this.companyTypes = res;
+    });
+  }
+
+  getCities(e:any) {
+    this.Service.get("/City").subscribe((res: CityModel[]) => {
+      debugger;
+      this.cities = res.filter(x=>x.countryId==e.id);
     });
   }
 }

@@ -1,6 +1,7 @@
 import { CommonModule } from "@angular/common";
 import { NgModule } from "@angular/core";
 import { FormsModule } from "@angular/forms";
+import { NgSelectModule } from "@ng-select/ng-select";
 import { ComponentsCardsModule } from "src/app/components/cards/components.cards.module";
 import { DataTableModule } from "src/app/components/dataTable/dataTable.module";
 import { LayoutContainersModule } from "src/app/containers/layout/layout.containers.module";
@@ -32,7 +33,8 @@ import { VendorRoutingModule } from "./vendor.routing";
     DataTableModule,
     LayoutContainersModule,
     VendorRoutingModule,
-    FormsModule
+    FormsModule,
+    NgSelectModule,
   ],
   providers: [APIService],
   exports: [VendorComponent, VendorFormComponent],

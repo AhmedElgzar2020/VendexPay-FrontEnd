@@ -12,8 +12,7 @@ export class VendorFormComponent implements OnInit {
   }
   Action(event)
   {
-    debugger;
-    switch (event) {
+    switch (event.event) {
       case "Next":
         this.currentForm++;
         break;

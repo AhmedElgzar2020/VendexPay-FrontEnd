@@ -20,21 +20,31 @@ export interface Marchant {
   companyTypeId: number;
   offices: Office[];
   contacts: Contact[];
+  officeId?:Office;
 }
 export interface Office {
-  MarchantId: number;
-  ZoneNo: string;
-  StreetNo: string;
-  BuildingNo: string;
-  Phone: string;
-  Fax: string;
-  Email: string;
-  WebSite: string;
-  BuildingTypeid: number;
+  marchantId: number;
+  zoneNo: string;
+  streetNo: string;
+  buildingNo: string;
+  phone: string;
+  fax: string;
+  email: string;
+  webSite: string;
+  buildingTypeid: number;
 }
 export interface Contact {
-  Name: string;
-  Title: string;
-  Email: string;
-  Mobile: string;
+  name: string;
+  title: string;
+  email: string;
+  mobile: string;
+  vendorId: number;
+}
+
+export interface Manager {
+  name: string;
+  title: string;
+  qId: string;
+  mobile: string;
+  vendorId: number;
 }

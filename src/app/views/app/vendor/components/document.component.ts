@@ -9,6 +9,7 @@ export class DocumentComponent implements OnInit {
   constructor() {}
   ngOnInit() {}
   Action(event: any) {
-    this.GetAction.emit(event);
+    let data = { event: event };
+    this.GetAction.emit(data);
   }
 }

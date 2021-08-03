@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { IColumn } from 'src/app/models/dataTable.column.model';
+import { Column } from 'src/app/models/dataTable.column.model';
 
 @Component({
   selector: 'dataTable',
@@ -8,7 +8,7 @@ import { IColumn } from 'src/app/models/dataTable.column.model';
 export class DataTableComponent implements OnInit {
 
   @Input() rows: any[];
-  @Input() columns: IColumn[];
+  @Input() columns: Column[];
 
   constructor() { }
 

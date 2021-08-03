@@ -1,5 +1,5 @@
 import { Component, OnInit } from "@angular/core";
-import { IColumn } from "src/app/models/dataTable.column.model";
+import { Column } from "src/app/models/dataTable.column.model";
 import { Vendor } from "src/app/models/vendor.model";
 
 @Component({
@@ -9,7 +9,7 @@ import { Vendor } from "src/app/models/vendor.model";
 export class MachineComponent implements OnInit {
   constructor() {}
   model: Vendor[];
-  columns: IColumn[];
+  columns: Column[];
   ngOnInit() {
     this.model = [
     ];
