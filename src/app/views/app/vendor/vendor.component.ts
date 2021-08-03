@@ -1,5 +1,5 @@
 import { Component, OnInit } from "@angular/core";
-import { IVendor } from "src/app/models/vendor.model";
+import { Vendor } from "src/app/models/vendor.model";
 
 @Component({
   selector: "vendor",
@@ -7,13 +7,8 @@ import { IVendor } from "src/app/models/vendor.model";
 })
 export class VendorComponent implements OnInit {
   constructor() {}
-  model: IVendor ;
+  model: Vendor ;
   ngOnInit() {
-    this.model= {
-      email: "ahmed@llasclikj.kjp",
-      id: 0,
-      imgPath: "/assets/img/profile-pic-l-3.jpg",
-      name: "Ahmed",
-    };
+    
   }
 }

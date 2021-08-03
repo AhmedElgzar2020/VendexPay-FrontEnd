@@ -1,6 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { IColumn } from 'src/app/models/dataTable.column.model';
-import { IVendor } from 'src/app/models/vendor.model';
 
 @Component({
   selector: 'dataTable',

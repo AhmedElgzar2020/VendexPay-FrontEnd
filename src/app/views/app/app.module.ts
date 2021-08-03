@@ -12,6 +12,7 @@ import { POsModule } from './POs/Pos.module';
 import { PartenerModule } from './partener/partener.module';
 import { MachineModule } from './machine/machine.module';
 import { MobilePaymentModule } from './mobilePayment/mobilePayment.module';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -28,7 +29,8 @@ import { MobilePaymentModule } from './mobilePayment/mobilePayment.module';
     POsModule,
     PartenerModule,
     MachineModule,
-    MobilePaymentModule
+    MobilePaymentModule,
+    FormsModule,
   ]
 })
 export class AppModule { }

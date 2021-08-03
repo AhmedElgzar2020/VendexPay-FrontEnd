@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { IVendor } from 'src/app/models/vendor.model';
+import { Vendor } from 'src/app/models/vendor.model';
 
 @Component({
   selector: 'app-consumer-card',
@@ -7,7 +7,7 @@ import { IVendor } from 'src/app/models/vendor.model';
 })
 export class ConsumerCardComponent implements OnInit {
 
-  @Input() vendor: IVendor;
+  @Input() vendor: Vendor;
 
   constructor() { }
 

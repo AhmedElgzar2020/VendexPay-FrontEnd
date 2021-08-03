@@ -1,6 +1,6 @@
 import { Component, OnInit } from "@angular/core";
 import { IColumn } from "src/app/models/dataTable.column.model";
-import { IVendor } from "src/app/models/vendor.model";
+import { Vendor } from "src/app/models/vendor.model";
 
 @Component({
   selector: "Machine",
@@ -8,34 +8,10 @@ import { IVendor } from "src/app/models/vendor.model";
 })
 export class MachineComponent implements OnInit {
   constructor() {}
-  model: IVendor[];
+  model: Vendor[];
   columns: IColumn[];
   ngOnInit() {
     this.model = [
-      {
-        email: "ahmed@llasclikj.kjp",
-        id: 0,
-        imgPath: "/assets/img/profile-pic-l-3.jpg",
-        name: "Ahmed",
-      },
-      {
-        email: "ahmed@llasclikj.kjp",
-        id: 0,
-        imgPath: "/assets/img/profile-pic-l-3.jpg",
-        name: "Ahmed",
-      },
-      {
-        email: "ahmed@llasclikj.kjp",
-        id: 0,
-        imgPath: "/assets/img/profile-pic-l-3.jpg",
-        name: "Ahmed",
-      },
-      {
-        email: "ahmed@llasclikj.kjp",
-        id: 0,
-        imgPath: "/assets/img/profile-pic-l-3.jpg",
-        name: "Ahmed",
-      },
     ];
     this.columns = [{name:"id"},{name: "name"}, {name:"email"}];
   }

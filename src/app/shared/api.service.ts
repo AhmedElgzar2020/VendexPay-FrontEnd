@@ -2,15 +2,15 @@ import { HttpClient } from "@angular/common/http";
 import { Injectable } from "@angular/core";
 
 @Injectable()
-export class AuthService {
+export class APIService {
     constructor(private http: HttpClient) { }
-    baseUrl="";
+    baseUrl="https://localhost:44345/api";
 
-    get(){
-        return this.http.get(this.baseUrl);
+    get(url:string){
+        return this.http.get(this.baseUrl+url);
     }
 
-    post(model:any)
+    post(url:string,model:any)
     {
         return this.http.post(this.baseUrl,model);
     }
