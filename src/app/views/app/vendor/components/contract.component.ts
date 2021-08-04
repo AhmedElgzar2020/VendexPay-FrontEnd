@@ -1,4 +1,5 @@
-import { Component, EventEmitter, OnInit, Output } from "@angular/core";
+import { Component, EventEmitter, Input, OnInit, Output } from "@angular/core";
+import { Contract } from "src/app/models/vendor.model";
 
 @Component({
   selector: "contract",
@@ -6,6 +7,17 @@ import { Component, EventEmitter, OnInit, Output } from "@angular/core";
 })
 export class ContractComponent implements OnInit {
   @Output() GetAction = new EventEmitter();
+  @Input() inputModel: Contract;
+  model: Contract = {
+    ClientNO:"",
+    ContractNo:"",
+    Email:"",
+    ExpireDate:undefined,
+    StartDate:undefined,
+    RenewalDate:undefined,
+    RenewalExpireDate:undefined,
+    WebSite:""
+  };
   constructor() {}
   ngOnInit() {}
   Action(event: any) {
