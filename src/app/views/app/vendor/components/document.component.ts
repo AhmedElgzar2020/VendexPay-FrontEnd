@@ -46,7 +46,7 @@ export class DocumentComponent implements OnInit {
   constructor() {}
   ngOnInit() {}
   Action(event: any) {
-    let data = { event: event };
+    let data = { event: event, model: this.model,form:5 };
     this.GetAction.emit(data);
   }
 }

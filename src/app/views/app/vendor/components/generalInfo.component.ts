@@ -59,4 +59,21 @@ export class GeneralInfoComponent implements OnInit {
       this.cities = res.filter(x=>x.countryId==e.id);
     });
   }
+
+  onFileChange(event) {
+    const reader = new FileReader();
+    
+    if(event.target.files && event.target.files.length) {
+      const [file] = event.target.files;
+      reader.readAsDataURL(file);
+    
+      reader.onload = () => {
+   
+        this.model.logo = reader.result as string;
+     
+   
+      };
+   
+    }
+  }
 }
